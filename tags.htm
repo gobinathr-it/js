@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Tags Demo</title>
+
+<style>
+body {font-family: Arial;}
+table, th, td {border:1px solid black; border-collapse: collapse; padding:5px;}
+</style>
+
+<script>
+function showMsg(){
+  alert("Button Clicked!");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>HTML Tags Demo</h1>
+<nav>Home | About | Contact</nav>
+</header>
+
+<hr>
+
+<section>
+<h2>Text Formatting</h2>
+<p>This is a <strong>bold</strong>, <em>italic</em>, <mark>highlight</mark> text.</p>
+<p>Water = H<sub>2</sub>O , 10<sup>2</sup> = 100</p>
+<p><del>Old price</del> <ins>New price</ins></p>
+</section>
+
+<hr>
+
+<section>
+<h2>Quotes & Code</h2>
+<blockquote>Life is very simple.</blockquote>
+<q>Short quote</q>
+<pre>
+<code>
+print("Hello World")
+</code>
+</pre>
+<p>Press <kbd>Ctrl + C</kbd></p>
+</section>
+
+<hr>
+
+<section>
+<h2>Lists</h2>
+<ol>
+<li>Apple</li>
+<li>Orange</li>
+</ol>
+
+<dl>
+<dt>HTML</dt>
+<dd>Markup Language</dd>
+</dl>
+</section>
+
+<hr>
+
+<section>
+<h2>Table</h2>
+<table>
+<caption>Student Table</caption>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>Ravi</td>
+<td>22</td>
+</tr>
+</table>
+</section>
+
+<hr>
+
+<section>
+<h2>Form</h2>
+<form>
+<label>Name:</label>
+<input type="text"><br><br>
+
+<label>Message:</label>
+<textarea></textarea><br><br>
+
+<select>
+<option>Choose</option>
+<option>Option 1</option>
+</select><br><br>
+
+<button type="button" onclick="showMsg()">Click Me</button>
+</form>
+</section>
+
+<hr>
+
+<section>
+<h2>Media</h2>
+<video width="200" controls>
+<source src="movie.mp4" type="video/mp4">
+</video>
+
+<canvas width="200" height="100" style="border:1px solid black;"></canvas>
+</section>
+
+<hr>
+
+<section>
+<h2>Details Tag</h2>
+<details>
+<summary>Click to open</summary>
+<p>Hidden content inside details tag.</p>
+</details>
+</section>
+
+<hr>
+
+<footer>
+<p>© 2026 HTML Demo</p>
+</footer>
+
+</body>
+</html>

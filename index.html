@@ -1,0 +1,84 @@
+<p id="one">
+    hello
+</p>
+
+<script>
+    var para = document.getElementById("one")
+    console.log(para.textContent)
+    para.textContent = "world"
+</script>
+
+
+
+<h1 id="h1">
+    Hello
+</h1>
+<button onclick ="change()">Change</button>
+ <script>
+    //selecting h1 tag by id
+    var h1 = document.getElementById("h1")
+    //print h1 inside text with changed text 
+    console.log(h1.textContent)
+    
+    function change()
+    {
+        h1.textContent = "bye"
+
+    }
+ </script>
+
+<input id="fir" value="">
+<input id="sec" value="">
+<button onclick="add()">get total</button>
+<p id="answer">Answer</p>
+
+<script>
+    var fn=document.getElementById("fir")
+    var sn=document.getElementById("sec")
+    var equal=document.getElementById("answer")
+
+    function add(){
+        var fn1=Number(fn.value)
+        var sn2=Number(sn.value)
+        var equalall=fn1+sn2
+        answer.textContent=equalall
+    }
+</script>
+
+
+<h1>Guess the number</h1>
+<input id="guessnum" value="">
+<button onclick="check()">Check</button>
+<p id="result">You are wrong/right</p>
+<p id="score">score:10</p>
+<script>
+    var guessnumber = document.getElementById("guessnum")
+    var result = document.getElementById("result")
+    var sore = document.getElementById("score")
+    var randomNumber = Math.floor(Math.random()*10)+1
+    var totalscore = 10
+
+    function check()
+{
+        var enternumber = guessnumber.value
+        if(randomNumber == enternumber)
+        {
+            console.log("Right")
+            result.textContent="right"
+            alert("You guess is correct")
+        }
+    else
+    {
+        totalscore=totalscore-1
+        score.textContent="score:"+totalscore
+        result.textContent="wrong"
+        
+    }
+}
+</script>
+
+
+
+
+
+
