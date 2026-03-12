@@ -115,7 +115,7 @@
     function see(){
         result.textContent=input.value
     }
-</script>-->
+</script>
 
 <button onclick="extra()">Add</button>
 <div id="result"></div>
@@ -131,4 +131,42 @@
     }
 </script>
 
+<button id="btn" onclick="click()">change color</button>
 
+<script>
+    var btn = document.getElementById("btn")
+    function click()
+    {
+        btn.style.backgroundColor="red"
+    }
+</script>
+
+
+<h1 id="result">Name</h1>
+<button onclick="changeName(event)">jhon</button>
+<button onclick="changeName(event)">hari</button>
+<button onclick="changeName(event)">praveen</button>
+
+<script>
+var h1 = document.getElementById("result")
+
+function changeName(event)
+{
+    h1.textContent = event.target.textContent
+}
+</script>-->
+
+<h1 onclick="deleteitem(event)">one</h1>
+<h1 onclick="deleteitem(event)">two</h1>
+<h1 onclick="deleteitem(event)">three</h1>
+<h1 onclick="deleteitem(event)">four</h1>
+<h1 onclick="deleteitem(event)">five</h1>
+<h1 onclick="deleteitem(event)">six</h1>
+
+<script>
+
+    function deleteitem(event)
+    {
+        event.target.remove()
+    }
+</script>
