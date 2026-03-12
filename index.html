@@ -1,4 +1,4 @@
-<p id="one">
+<!--<p id="one">
     hello
 </p>
 
@@ -47,14 +47,18 @@
 
 
 <h1>Guess the number</h1>
+
 <input id="guessnum" value="">
+
 <button onclick="check()">Check</button>
+
 <p id="result">You are wrong/right</p>
+
 <p id="score">score:10</p>
 <script>
     var guessnumber = document.getElementById("guessnum")
     var result = document.getElementById("result")
-    var sore = document.getElementById("score")
+    var score = document.getElementById("score")
     var randomNumber = Math.floor(Math.random()*10)+1
     var totalscore = 10
 
@@ -65,7 +69,7 @@
         {
             console.log("Right")
             result.textContent="right"
-            alert("You guess is correct")
+            alert("Your guess is correct")
         }
     else
     {
@@ -75,9 +79,24 @@
         
     }
 }
+</script>-->
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
+
+<script>
+    var box = document.getElementById("box")
+
+    function change(){
+        box.style.backgroundColor="red"
+    }
 </script>
-
-
 
 
 
