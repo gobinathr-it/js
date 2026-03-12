@@ -1,4 +1,4 @@
-<!--<p id="one">
+<!--<p id="one"
     hello
 </p>
 
@@ -80,24 +80,55 @@
     }
 }
 </script>-->
-<style>
+<!--<style>
     div{
         background-color: black;
         width: 100px;
         height: 100px;
     }
+    .wmax{
+        width: 300px;
+        height: 100px;
+        transition: 3s;
+    }
 </style>
 <div id="box"></div>
-<button onclick="change()">change color</button>
+<button onclick="change()">change color</button>  
 
 <script>
     var box = document.getElementById("box")
 
     function change(){
         box.style.backgroundColor="red"
+        box.setAttribute("class","wmax")
     }
 </script>
 
 
+<input id="ip" onkeyup="see()">
+<h1 id="result"></h1>
+
+<script>
+    var input = document.getElementById("ip")
+    var result = document.getElementById("result")
+
+    function see(){
+        result.textContent=input.value
+    }
+</script>-->
+
+<button onclick="extra()">Add</button>
+<div id="result"></div>
+
+<script>
+
+    var div = document.getElementById("result")
+
+    function extra(){
+        var listitem = document.createElement("h1")
+        listitem.textContent="hello"
+        div.append(listitem)
+    }
+</script>
 
 
